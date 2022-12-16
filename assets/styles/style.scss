@@ -637,3 +637,88 @@ PROJECTS
         }
     }
 }
+
+/*
+RESPONSIVES
+*/
+@media screen and (max-width:500px) {
+    header {
+        margin: .5rem 1rem !important;
+    }
+
+    main {
+        margin: 0 !important;
+        overflow-x: hidden !important;
+
+        #title {
+            height: 60vh !important;
+
+            h1 {
+                font-size: 4rem !important;
+                transform: translate(-90deg);
+            }
+        }
+
+        #rotate_section {
+            margin-top: 5rem !important;
+        }
+
+        .section_translate {
+            margin-top: 5rem !important;
+        }
+
+        .container_translate h1 {
+            font-size: 2rem !important;
+
+        }
+
+        #about_me {
+            flex-direction: column !important;
+            margin-top: 5rem !important;
+
+            img {
+                width: 70% !important;
+            }
+        }
+
+        #works {
+            margin-top: 5rem !important;
+        }
+
+        .work {
+
+            .left_work {
+                .title {
+                    font-size: 1.5rem !important;
+                }
+            }
+        }
+
+        #contact {
+            margin-top: 5rem !important;
+            flex-direction: column !important;
+
+            #contact-left {
+                h3 {
+                    font-size: 4rem;
+
+                    span {
+                        font-size: 4rem;
+                    }
+                }
+            }
+
+            #contact-right {
+                #contact-right-block {
+                    #contact-right-container {
+                        a {
+                            font-size: 2rem !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .overlay {}
+}

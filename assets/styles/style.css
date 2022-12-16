@@ -510,4 +510,59 @@ PROJECTS
 }
 #contact #contact-right .contact-right-container a:hover::before {
   width: 50%;
+}
+
+/*
+RESPONSIVES
+*/
+@media screen and (max-width: 500px) {
+  header {
+    margin: 0.5rem 1rem !important;
+  }
+  main {
+    margin: 0 !important;
+    overflow-x: hidden !important;
+  }
+  main #title {
+    height: 60vh !important;
+  }
+  main #title h1 {
+    font-size: 4rem !important;
+    transform: translate(-90deg);
+  }
+  main #rotate_section {
+    margin-top: 5rem !important;
+  }
+  main .section_translate {
+    margin-top: 5rem !important;
+  }
+  main .container_translate h1 {
+    font-size: 2rem !important;
+  }
+  main #about_me {
+    flex-direction: column !important;
+    margin-top: 5rem !important;
+  }
+  main #about_me img {
+    width: 70% !important;
+  }
+  main #works {
+    margin-top: 5rem !important;
+  }
+  main .work .left_work .title {
+    font-size: 1.5rem !important;
+  }
+  main #contact {
+    margin-top: 5rem !important;
+    flex-direction: column !important;
+  }
+  main #contact #contact-left h3 {
+    font-size: 4rem;
+  }
+  main #contact #contact-left h3 span {
+    font-size: 4rem;
+  }
+  main #contact #contact-right #contact-right-block #contact-right-container a {
+    font-size: 2rem !important;
+  }
 }/*# sourceMappingURL=style.css.map */
