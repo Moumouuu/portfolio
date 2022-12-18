@@ -647,11 +647,12 @@ RESPONSIVES
     }
 
     main {
-        margin: 0 !important;
+        margin: 0.7rem !important;
         overflow-x: hidden !important;
 
         #title {
-            height: 60vh !important;
+            margin-top: 5rem;
+            height: auto !important;
 
             h1 {
                 font-size: 4rem !important;
@@ -660,11 +661,15 @@ RESPONSIVES
         }
 
         #rotate_section {
-            margin-top: 5rem !important;
+            margin-top: 0rem !important;
+
+            svg {
+                width: 150px;
+            }
         }
 
         .section_translate {
-            margin-top: 5rem !important;
+            margin-top: 2rem !important;
         }
 
         .container_translate h1 {
@@ -708,9 +713,15 @@ RESPONSIVES
                 }
             }
 
+            #contact-left {
+                h3 {
+                    text-align: center;
+                }
+            }
+
             #contact-right {
                 #contact-right-block {
-                    #contact-right-container {
+                    .contact-right-container {
                         a {
                             font-size: 2rem !important;
                         }
@@ -720,5 +731,12 @@ RESPONSIVES
         }
     }
 
-    .overlay {}
+    .overlay-content {
+        height: 100% !important;
+        flex-direction: column !important;
+
+        a {
+            transform: rotate(0deg) !important;
+        }
+    }
 }

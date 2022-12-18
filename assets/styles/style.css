@@ -520,21 +520,25 @@ RESPONSIVES
     margin: 0.5rem 1rem !important;
   }
   main {
-    margin: 0 !important;
+    margin: 0.7rem !important;
     overflow-x: hidden !important;
   }
   main #title {
-    height: 60vh !important;
+    margin-top: 5rem;
+    height: auto !important;
   }
   main #title h1 {
     font-size: 4rem !important;
     transform: translate(-90deg);
   }
   main #rotate_section {
-    margin-top: 5rem !important;
+    margin-top: 0rem !important;
+  }
+  main #rotate_section svg {
+    width: 150px;
   }
   main .section_translate {
-    margin-top: 5rem !important;
+    margin-top: 2rem !important;
   }
   main .container_translate h1 {
     font-size: 2rem !important;
@@ -562,7 +566,17 @@ RESPONSIVES
   main #contact #contact-left h3 span {
     font-size: 4rem;
   }
-  main #contact #contact-right #contact-right-block #contact-right-container a {
+  main #contact #contact-left h3 {
+    text-align: center;
+  }
+  main #contact #contact-right #contact-right-block .contact-right-container a {
     font-size: 2rem !important;
+  }
+  .overlay-content {
+    height: 100% !important;
+    flex-direction: column !important;
+  }
+  .overlay-content a {
+    transform: rotate(0deg) !important;
   }
 }/*# sourceMappingURL=style.css.map */
