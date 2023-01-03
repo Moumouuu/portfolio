@@ -664,12 +664,16 @@ RESPONSIVES
             margin-top: 0rem !important;
 
             svg {
-                width: 150px;
+                width: 100px;
             }
         }
 
         .section_translate {
             margin-top: 2rem !important;
+
+            .container_translate {
+                overflow: hidden;
+            }
         }
 
         .container_translate h1 {
@@ -737,6 +741,19 @@ RESPONSIVES
 
         a {
             transform: rotate(0deg) !important;
+        }
+    }
+
+    .left-project {
+        display: none !important;
+    }
+
+    .right-project {
+        width: 100%;
+        height: 100%;
+
+        h2 {
+            font-size: 2.5rem;
         }
     }
 }

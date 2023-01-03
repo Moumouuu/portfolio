@@ -535,10 +535,13 @@ RESPONSIVES
     margin-top: 0rem !important;
   }
   main #rotate_section svg {
-    width: 150px;
+    width: 100px;
   }
   main .section_translate {
     margin-top: 2rem !important;
+  }
+  main .section_translate .container_translate {
+    overflow: hidden;
   }
   main .container_translate h1 {
     font-size: 2rem !important;
@@ -578,5 +581,15 @@ RESPONSIVES
   }
   .overlay-content a {
     transform: rotate(0deg) !important;
+  }
+  .left-project {
+    display: none !important;
+  }
+  .right-project {
+    width: 100%;
+    height: 100%;
+  }
+  .right-project h2 {
+    font-size: 2.5rem;
   }
 }/*# sourceMappingURL=style.css.map */
