@@ -2,7 +2,8 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #edebdc;
+  background-color: black;
+  color: #edebdc;
   cursor: url("../images/cursor.svg"), auto;
   font-family: "Playfair Display", serif;
 }
@@ -17,25 +18,13 @@ body .posters {
   transition: all 0.4s ease;
 }
 body #poster_1 {
-  background-image: url("/assets/images/lemauvaiscoin.png");
+  background-image: url("/assets/images/edufiche.png");
 }
 body #poster_2 {
-  background-image: url("/assets/images/zikme.png");
+  background-image: url("/assets/images/co-note.png");
 }
 body #poster_3 {
-  background-image: url("/assets/images/aphrodites.png");
-}
-body #poster_4 {
-  background-image: url("/assets/images/kouisap.png");
-}
-body #poster_5 {
-  background-image: url("/assets/images/weather.png");
-}
-body #poster_6 {
-  background-image: url("/assets/images/nerdit.png");
-}
-body #poster_7 {
-  background-image: url("/assets/images/flower.png");
+  background-image: url("/assets/images/jalla.png");
 }
 body .overlay {
   height: 100%;
@@ -319,6 +308,7 @@ body #main #works .work {
   justify-content: space-between;
   align-items: center;
   border-top: solid 1px #edebdc;
+  border-bottom: solid 1px #edebdc;
   padding: 0.3rem 1rem;
 }
 body #main #works .work .left_work {
@@ -383,9 +373,8 @@ PROJECTS
 .project .left-project img {
   width: 100%;
   height: 100%;
-  filter: grayscale(1);
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: contain;
+  background-position: left;
 }
 .project .right-project {
   margin: 0rem 1rem;
@@ -406,9 +395,12 @@ PROJECTS
 }
 .project .right-project .right-project-categories {
   display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .project .right-project .right-project-categories span {
-  margin: 0rem 0.4rem;
+  margin: 0.3rem 0.4rem;
   padding: 0.1rem 0.3rem;
   background-color: white;
   color: black;
@@ -528,14 +520,14 @@ RESPONSIVES
     height: auto !important;
   }
   main #title h1 {
-    font-size: 4rem !important;
+    font-size: 3rem !important;
     transform: translate(-90deg);
   }
   main #rotate_section {
     margin-top: 0rem !important;
   }
   main #rotate_section svg {
-    width: 100px;
+    width: 80px;
   }
   main .section_translate {
     margin-top: 2rem !important;

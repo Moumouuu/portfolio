@@ -19,29 +19,27 @@ class project
  * DATA PROJECTS
  */
 
-$dataLeMauvaisCoin = ["LeMauvaisCoin", "LeMauvaisCoin est une copie de leboncoin, cette application reprend toutes les principales fonctionnalités de Leboncoin, création du compte, publication de post, système de messagerie etc. Le site est réalisé avec Symfony 6 et bootstrap.", ["Symfony", "Bootstrap"], "https://lemauvaiscoin.pluviaux.fr", "../assets/images/lemauvaiscoin.png"];
-$dataZikMe = ["ZikMe", "ZikMe est un site fait en PHP. Le site permet de se créer un compte utilisateur et ensuite publier ses musiques ou bien écouter celles des autres. Vous pouvez aussi liker les musiques que vous aimez pour les faires monter dans le classement.", "../assets/images/zikme.png"];
-$dataAphrodites = ["Aphrodites", "Aphrodites est une application faites en Symfony 6 et Bootstrap, dans le cadre de la nuit de l'info. Un événement national dans lequel un sujet commun est donné et les étudiants doit répondre à ce besoin de la meilleure des façons dans une nuit de code.", ["Symfony", "Bootstrap"], "https://aphrodites.pluviaux.fr", "../assets/images/aphrodites.png"];
-$dataKouisap = ["Kouisap", "Kouisap est comme son nom l'indique un quiz (de Français) fait avec VueJS. Il y a 3 niveaux de difficultés croissante, il faut comptabiliser au minimum 6 réponses justes sur 10 pour passer au prochain niveau. Bonne chance !", ["VueJs"], "https://kouisap.pluviaux.fr", "../assets/images/kouisap.png"];
-$dataWeather = ["Weather", "Weather est ma première application faites avec VueJS, un framework front. J'ai pu apprendre les bases d'un framework front, tel que l'utilité des composants. J'ai aussi dû utiliser une API de météo pour pouvoir récupérer les données météorologiques en temps réel et dans le monde entier.", ["VueJs", "API"], "https://weather.pluviaux.fr", "../assets/images/weather.png"];
-$dataNerdit = ["Nerd.It", "NerdIt est un site de fast food en ligne sur le thème des Nerds et des geeks avec un univers bien distinct. J'ai appris à faire un curseur custom, des animations et comment gérer les positions Absolute et Relative. Ce projet a été réalisé à deux, dans le cadre de ma formation universitaire.", ["HTML / CSS"], "https://nerdif.cf", "../assets/images/nerdit.png"];
-$dataFlower = ["Flower", "Flower est mon tout premier site en HTML / CSS et un peu de JS qui mérite d'avoir son site publié. C'est une boutique en ligne fictive qui nous présente différentes fleurs peu communes. Ce site m'a énormément fait progresser en CSS et HTML, j'apprécie tout particulièrement le design du site.", ["HTML / CSS"], "", "../assets/images/flower.png"];
+$dataEduFiche = ["Edu-Fiche", "Edu-Fiche est une application permettant de générer instantanément des fiches de révision grâce à l'API d'OpenAI. Elle propose une version gratuite ainsi qu'une version payante.", ["NextJS", "Open AI", "Stripe", "Zod", "Prisma", "NextAuth", "Shadcn"], "https://edu-fiche.fr", "../assets/images/edufiche.png"];
+
+$dataCoNotes = ["Co-Notes", "Co-Notes offre la possibilité de prendre des notes de manière collaborative avec vos collègues en temps réel. Vous pouvez notamment créer des modèles de notes prédéfinis et devenir le créateur de ces modèles. ", ["NextJS", "Socket", "Zod", "Prisma", "NextAuth", "Shadcn"], "https://co-notes.fr", "../assets/images/co-note.png"];
+
+$dataJalla = ["Jalla Mulhouse", "Jalla Mulhouse est un site axé sur la promotion du linge de maison, offrant une gamme complète d'outils administratifs pour la gestion des produits, des promotions, du menu, et bien plus encore. Le site est hautement personnalisable, permettant une adaptation presque complète selon les besoins.", ["NextJS", "Tailwind", "NextAuth", "ShadCN"], "https://jalla-mulhouse.fr", "../assets/images/jalla.png"];
+
 
 /**
  * CREATE PROJECT WITH DATAS
  */
-$leMauvaisCoin = new project($dataLeMauvaisCoin[0], $dataLeMauvaisCoin[1], $dataLeMauvaisCoin[2], $dataLeMauvaisCoin[3], $dataLeMauvaisCoin[4]);
-$zikMe = new project($dataZikMe[0], $dataZikMe[1], $dataZikMe[2], $dataZikMe[3], $dataZikMe[4]);
-$aphrodites = new project($dataAphrodites[0], $dataAphrodites[1], $dataAphrodites[2], $dataAphrodites[3], $dataAphrodites[4]);
-$kouisap = new project($dataKouisap[0], $dataKouisap[1], $dataKouisap[2], $dataKouisap[3], $dataKouisap[4]);
-$weather = new project($dataWeather[0], $dataWeather[1], $dataWeather[2], $dataWeather[3], $dataWeather[4]);
-$nerdit = new project($dataNerdit[0], $dataNerdit[1], $dataNerdit[2], $dataNerdit[3], $dataNerdit[4]);
-$flower = new project($dataFlower[0], $dataFlower[1], $dataFlower[2], $dataFlower[3], $dataFlower[4]);
+$eduFiche = new project($dataEduFiche[0], $dataEduFiche[1], $dataEduFiche[2], $dataEduFiche[3], $dataEduFiche[4]);
+
+$coNotes = new project($dataCoNotes[0], $dataCoNotes[1], $dataCoNotes[2], $dataCoNotes[3], $dataCoNotes[4]);
+
+$jallaMulhouse = new project($dataJalla[0], $dataJalla[1], $dataJalla[2], $dataJalla[3], $dataJalla[4]);
+
 
 /**
  * TAB OF PROJECT
  */
-$projects = [$leMauvaisCoin, $zikMe, $aphrodites, $kouisap, $weather, $nerdit, $flower];
+$projects = [$eduFiche, $coNotes, $jallaMulhouse];
 if (isset($_GET["id"]) and $_GET["id"] < sizeof($projects) and $_GET["id"] >= 0)
     $project = $projects[$_GET['id']];
 else

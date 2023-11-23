@@ -7,7 +7,8 @@ $background-color: black;
 body {
     margin: 0;
     padding: 0;
-    background-color: $text-color;
+    background-color: $background-color;
+    color: $text-color;
     cursor: url('../images/cursor.svg'), auto;
     font-family: 'Playfair Display', serif;
 
@@ -24,33 +25,16 @@ body {
 
 
     #poster_1 {
-        background-image: url("/assets/images/lemauvaiscoin.png");
+        background-image: url("/assets/images/edufiche.png");
     }
 
     #poster_2 {
-        background-image: url("/assets/images/zikme.png");
+        background-image: url("/assets/images/co-note.png");
 
     }
 
     #poster_3 {
-        background-image: url("/assets/images/aphrodites.png");
-    }
-
-    #poster_4 {
-        background-image: url("/assets/images/kouisap.png");
-    }
-
-    #poster_5 {
-        background-image: url("/assets/images/weather.png");
-    }
-
-    #poster_6 {
-        background-image: url("/assets/images/nerdit.png");
-
-    }
-
-    #poster_7 {
-        background-image: url("/assets/images/flower.png");
+        background-image: url("/assets/images/jalla.png");
     }
 
     .overlay {
@@ -393,6 +377,7 @@ body {
                 justify-content: space-between;
                 align-items: center;
                 border-top: solid 1px $text-color;
+                border-bottom: solid 1px $text-color;
                 padding: 0.3rem 1rem;
 
                 .left_work {
@@ -474,8 +459,8 @@ PROJECTS
         img {
             width: 100%;
             height: 100%;
-            filter: grayscale(1);
-            object-fit: cover;
+            object-fit: contain;
+            background-position: left;
         }
     }
 
@@ -500,9 +485,12 @@ PROJECTS
 
         .right-project-categories {
             display: flex;
+            justify-items: center;
+            align-items: center;
+            flex-wrap: wrap;
 
             span {
-                margin: 0rem .4rem;
+                margin: 0.3rem .4rem;
                 padding: .1rem .3rem;
                 background-color: white;
                 color: black;
@@ -655,7 +643,7 @@ RESPONSIVES
             height: auto !important;
 
             h1 {
-                font-size: 4rem !important;
+                font-size: 3rem !important;
                 transform: translate(-90deg);
             }
         }
@@ -664,7 +652,7 @@ RESPONSIVES
             margin-top: 0rem !important;
 
             svg {
-                width: 100px;
+                width: 80px;
             }
         }
 
